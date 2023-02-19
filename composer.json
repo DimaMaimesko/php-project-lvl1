@@ -1,5 +1,6 @@
 {
     "name": "hexlet/code",
+    "description": "first hexlet project",
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
@@ -10,6 +11,9 @@
             "name": "dmytromaimesko",
             "email": "dima.maimesko@gmail.com"
         }
+    ],
+    "bin": [
+        "bin/brain-games"
     ],
     "require": {}
 }
