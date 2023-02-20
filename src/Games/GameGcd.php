@@ -1,12 +1,10 @@
 <?php
-
-namespace BrainGames\GameCalc;
+namespace BrainGames\GameGcd;
 
 use function BrainGames\Engine\GameEngine;
 
 const STEPS_AMOUNT = 3;
-const OPERATIONS = ['+', '-', '*'];
-function GameCalc()
+function GameGcd()
 {
     $questions = [];
     $correctAnswers = [];
@@ -23,29 +21,15 @@ function createQuestion()
 {
     $value1 = randomNumber();
     $value2 = randomNumber();
-    $operation = randomOperation();
-    return "{$value1} {$operation} {$value2}";
+    return "{$value1} {$value2}";
 }
 
 function correctAnswer($question)
 {
     $questionItems = explode(' ', $question);
     $value1 = $questionItems[0];
-    $value2 = $questionItems[2];
-    $operation = $questionItems[1];
-    switch ($operation) {
-        case '+':
-            return (int) $value1 + $value2;
-        case '-':
-            return (int) $value1 - $value2;
-        case '*':
-            return (int) $value1 * $value2;
-    }
-}
-
-function randomOperation()
-{
-    return OPERATIONS[rand(0, 2)];
+    $value2 = $questionItems[1];
+    return gmp_gcd($value1, $value2);
 }
 
 function randomNumber()

@@ -5,3 +5,6 @@
 
 Calculator game:
 <a href="https://asciinema.org/a/h7ToqLN8pjV0ISEGQzXIcK2Hl" target="_blank"><img src="https://asciinema.org/a/wZiAlSLRe8jOOIzgie0k9LDwf.svg" /></a>
+
+Calculate GCD game:
+<a href="https://asciinema.org/a/mtWqw7BZOlziPg4QedddPVlqb" target="_blank"><img src="https://asciinema.org/a/wZiAlSLRe8jOOIzgie0k9LDwf.svg" /></a>
