@@ -4,7 +4,7 @@ namespace BrainGames\GameGcd;
 use function BrainGames\Engine\GameEngine;
 use function cli\line;
 use function cli\prompt;
-
+use function gmp_gcd;
 const STEPS_AMOUNT = 3;
 function GameGcd()
 {
