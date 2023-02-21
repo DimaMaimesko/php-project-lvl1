@@ -34,7 +34,7 @@ function createQuestion()
     return "{$value1} {$operation} {$value2}";
 }
 
-function correctAnswer(array $question)
+function correctAnswer(string $question)
 {
     $questionItems = explode(' ', $question);
     $value1 = $questionItems[0];
