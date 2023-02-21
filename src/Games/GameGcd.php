@@ -35,8 +35,8 @@ function createQuestion()
 function correctAnswer(string $question)
 {
     $questionItems = explode(' ', $question);
-    $value1 = $questionItems[0];
-    $value2 = $questionItems[1];
+    $value1 = (int)$questionItems[0];
+    $value2 = (int)$questionItems[1];
     return gcd($value1, $value2);
 }
 
