@@ -32,7 +32,7 @@ function createQuestion()
     return "{$value1} {$value2}";
 }
 
-function correctAnswer($question)
+function correctAnswer(string $question)
 {
     $questionItems = explode(' ', $question);
     $value1 = $questionItems[0];
@@ -45,7 +45,7 @@ function randomNumber()
     return rand(0, 100);
 }
 
-function gcd($num1, $num2)
+function gcd(int $num1, int $num2)
 {
     while ($num1 != $num2) {
         if ($num1 > $num2) {

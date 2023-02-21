@@ -34,7 +34,7 @@ function createQuestion()
     return "{$value1} {$operation} {$value2}";
 }
 
-function correctAnswer($question)
+function correctAnswer(array $question)
 {
     $questionItems = explode(' ', $question);
     $value1 = $questionItems[0];
@@ -42,11 +42,11 @@ function correctAnswer($question)
     $operation = $questionItems[1];
     switch ($operation) {
         case '+':
-            return (int)$value1 + $value2;
+            return (int)$value1 + (int)$value2;
         case '-':
-            return (int)$value1 - $value2;
+            return (int)$value1 - (int)$value2;
         case '*':
-            return (int)$value1 * $value2;
+            return (int)$value1 * (int)$value2;
     }
 }
 

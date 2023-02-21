@@ -26,7 +26,7 @@ function GamePrime()
     GameEngine($questions, $correctAnswers, $name);
 }
 
-function isNumberPrime($number)
+function isNumberPrime(int $number)
 {
     if ($number == 1) {
         return 'no';

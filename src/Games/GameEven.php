@@ -29,7 +29,7 @@ function GameEven()
     GameEngine($questions, $correctAnswers, $name);
 }
 
-function correctAnswer($randomNumber)
+function correctAnswer(int $randomNumber)
 {
     if (isEven($randomNumber)) {
         return 'yes';
