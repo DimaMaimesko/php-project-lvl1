@@ -4,7 +4,6 @@ namespace BrainGames\GameGcd;
 use function BrainGames\Engine\GameEngine;
 use function cli\line;
 use function cli\prompt;
-use function gmp_gcd;
 const STEPS_AMOUNT = 3;
 function GameGcd()
 {
@@ -36,10 +35,22 @@ function correctAnswer($question)
     $questionItems = explode(' ', $question);
     $value1 = $questionItems[0];
     $value2 = $questionItems[1];
-    return gmp_gcd($value1, $value2);
+    return gcd($value1, $value2);
 }
 
 function randomNumber()
 {
     return rand(0, 100);
+}
+
+function gcd($num1, $num2)
+{
+    while ($num1 != $num2) {
+        if ($num1 > $num2) {
+            $num1 = $num1 - $num2;
+        } else {
+            $num2 = $num2 - $num1;
+        }
+    }
+    return $num1;
 }
