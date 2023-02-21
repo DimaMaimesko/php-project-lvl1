@@ -3,6 +3,9 @@
 namespace BrainGames\GameEven;
 
 use function BrainGames\Engine\GameEngine;
+use function cli\line;
+use function cli\prompt;
+
 const STEPS_AMOUNT = 3;
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 100;
@@ -18,7 +21,12 @@ function GameEven()
         $correctAnswers[$i] = correctAnswer($questions[$i]);
         $i++;
     }
-    GameEngine($questions, $correctAnswers);
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+    line('Answer "yes" if the number is even, otherwise answer "no".');
+
+    GameEngine($questions, $correctAnswers, $name);
 }
 
 function correctAnswer($randomNumber)

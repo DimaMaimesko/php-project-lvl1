@@ -3,6 +3,8 @@
 namespace BrainGames\GameCalc;
 
 use function BrainGames\Engine\GameEngine;
+use function cli\line;
+use function cli\prompt;
 
 const STEPS_AMOUNT = 3;
 const OPERATIONS = ['+', '-', '*'];
@@ -16,7 +18,12 @@ function GameCalc()
         $correctAnswers[$i] = correctAnswer($questions[$i]);
         $i++;
     }
-    GameEngine($questions, $correctAnswers);
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+    line('What is the result of the expression');
+
+    GameEngine($questions, $correctAnswers, $name);
 }
 
 function createQuestion()

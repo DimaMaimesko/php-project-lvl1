@@ -6,12 +6,8 @@ use function cli\line;
 use function cli\prompt;
 
 
-function GameEngine($questions, $correctAnswers)
+function GameEngine($questions, $correctAnswers, $name)
 {
-    line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-    line('Answer "yes" if the number is even, otherwise answer "no".');
     $stepsAmount = count($questions);
 
     for ($i = 0; $i < $stepsAmount; $i++) {

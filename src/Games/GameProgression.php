@@ -2,6 +2,8 @@
 namespace BrainGames\GameProgression;
 
 use function BrainGames\Engine\GameEngine;
+use function cli\line;
+use function cli\prompt;
 
 const STEPS_AMOUNT = 3;
 function GameProgression()
@@ -25,5 +27,10 @@ function GameProgression()
         $questions[$j] = implode(' ', $progression);
         $j++;
     }
-    GameEngine($questions, $correctAnswers);
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+    line('What number is missing in the progression?');
+
+    GameEngine($questions, $correctAnswers, $name);
 }

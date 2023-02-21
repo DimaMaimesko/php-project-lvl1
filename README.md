@@ -11,3 +11,6 @@ Calculate GCD game:
 
 Progression game:
 <a href="https://asciinema.org/a/LfimeoNX8kzUeHn4xM0dI0Ebi" target="_blank"><img src="https://asciinema.org/a/wZiAlSLRe8jOOIzgie0k9LDwf.svg" /></a>
+
+Prime Numbers game:
+<a href="https://asciinema.org/a/ZiMZA4zjiil7gA0pR6ovskrQh" target="_blank"><img src="https://asciinema.org/a/wZiAlSLRe8jOOIzgie0k9LDwf.svg" /></a>
