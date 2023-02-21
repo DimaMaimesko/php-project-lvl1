@@ -40,7 +40,7 @@ function correctAnswer(string $question)
     return gcd($value1, $value2);
 }
 
-function randomNumber()
+function randomNumber():int
 {
     return rand(0, 100);
 }
