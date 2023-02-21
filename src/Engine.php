@@ -5,7 +5,6 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-
 function GameEngine($questions, $correctAnswers, $name)
 {
     $stepsAmount = count($questions);
@@ -24,5 +23,4 @@ function GameEngine($questions, $correctAnswers, $name)
         }
         line("Congratulations, %s!", $name);
     }
-
 }
