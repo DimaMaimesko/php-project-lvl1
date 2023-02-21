@@ -8,3 +8,6 @@ Calculator game:
 
 Calculate GCD game:
 <a href="https://asciinema.org/a/mtWqw7BZOlziPg4QedddPVlqb" target="_blank"><img src="https://asciinema.org/a/wZiAlSLRe8jOOIzgie0k9LDwf.svg" /></a>
+
+Progression game:
+<a href="https://asciinema.org/a/LfimeoNX8kzUeHn4xM0dI0Ebi" target="_blank"><img src="https://asciinema.org/a/wZiAlSLRe8jOOIzgie0k9LDwf.svg" /></a>
