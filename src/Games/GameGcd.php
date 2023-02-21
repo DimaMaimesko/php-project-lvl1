@@ -1,9 +1,11 @@
 <?php
+
 namespace BrainGames\GameGcd;
 
 use function BrainGames\Engine\GameEngine;
 use function cli\line;
 use function cli\prompt;
+
 const STEPS_AMOUNT = 3;
 function GameGcd()
 {

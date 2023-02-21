@@ -1,4 +1,5 @@
 <?php
+
 namespace BrainGames\GamePrime;
 
 use function BrainGames\Engine\GameEngine;

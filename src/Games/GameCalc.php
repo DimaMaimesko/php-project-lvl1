@@ -42,11 +42,11 @@ function correctAnswer($question)
     $operation = $questionItems[1];
     switch ($operation) {
         case '+':
-            return (int) $value1 + $value2;
+            return (int)$value1 + $value2;
         case '-':
-            return (int) $value1 - $value2;
+            return (int)$value1 - $value2;
         case '*':
-            return (int) $value1 * $value2;
+            return (int)$value1 * $value2;
     }
 }
 

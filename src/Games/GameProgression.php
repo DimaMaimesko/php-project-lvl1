@@ -1,4 +1,5 @@
 <?php
+
 namespace BrainGames\GameProgression;
 
 use function BrainGames\Engine\GameEngine;
@@ -17,7 +18,7 @@ function GameProgression()
         $stepsAmount = rand(5, 10);
         $progression = [];
         $nextValue = $progressionStart;
-        for($i = 0; $i < $stepsAmount; $i++) {
+        for ($i = 0; $i < $stepsAmount; $i++) {
             $nextValue += $progressionStep;
             $progression[] = $nextValue;
         }
